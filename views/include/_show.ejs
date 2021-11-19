@@ -1,0 +1,18 @@
+<%for(var i=0; i<users.lenght; i++) {%>
+    <tr>
+        <td><%=i+1 %></td>
+        <td><%=users[i].username%></td>
+        <td><%=users[i].firstname%></td>
+        <td><%=users[i].lastname%></td>
+        <td><%=users[i].email%></td>
+        <td><%=users[i].usertype%></td>
+        <td>
+            <a href="/appdate_user" class="btn border-shadow update">
+                <span class="text-gradient" ><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class="btn border-shadow delete">
+                <span class="text-gradient" ><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>
